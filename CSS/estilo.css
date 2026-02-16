@@ -1,0 +1,958 @@
+/* ESTILO GENERAL - ÁFRICA FUTURA */
+/* Archivo Descolonial de Futuros - Lo que el hombre blanco debe saber */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FDFAF7;
+    color: #1C1C1C;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    padding: 2rem;
+}
+
+.contenedor {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+/* TÍTULOS - TRES NIVELES */
+h1 {
+    font-size: 2.8rem;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.2rem;
+    border-bottom: 1px solid #B7A99A;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #5E5A54;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #2C3E4C;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+/* RESUMEN EJECUTIVO */
+.resumen {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.resumen p {
+    margin-bottom: 0.5rem;
+}
+
+/* TARJETAS DE ACCESO (MANIFIESTO, PROTOCOLO, ARCHIVO, GALERÍA) */
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
+
+.tarjeta {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: white;
+    border: 1px solid #E0D8CC;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    top: 0;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: #B7A99A;
+}
+
+.tarjeta-imagen {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background-size: cover;
+    background-position: center;
+    background-color: #F0E8DD;
+}
+
+.tarjeta-titulo {
+    padding: 0.8rem;
+    text-align: center;
+    font-family: 'Inter', 'Helvetica Neue', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-top: 1px solid #E0D8CC;
+}
+
+/* FORMULARIO DE CONTACTO */
+.formulario {
+    margin: 4rem 0;
+    border-top: 1px solid #E0D8CC;
+    padding-top: 2rem;
+}
+
+.formulario h3 {
+    font-family: 'Inter', 'Helvetica Neue', sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #2C3E4C;
+    margin-bottom: 0.5rem;
+}
+
+.formulario p {
+    font-size: 0.9rem;
+    color: #5E5A54;
+    margin-bottom: 1.5rem;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #010100;
+    background: white;
+    font-family: 'Georgia', serif;
+    font-size: 0.95rem;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: none;
+    border-color: #2C3E4C;
+}
+
+.formulario button {
+    background: none;
+    border: 1px solid #2C3E4C;
+    color: #2C3E4C;
+    padding: 0.6rem 1.8rem;
+    font-family: 'Inter', 'Helvetica Neue', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.formulario button:hover {
+    background: #2C3E4C;
+    color: white;
+}
+
+/* CONTADOR DE VOCES */
+.contador {
+    margin: 2rem 0;
+    font-size: 0.9rem;
+    color: #5E5A54;
+    text-align: center;
+}
+
+/* PIE DE PÁGINA */
+.footer {
+    margin-top: 4rem;
+    text-align: center;
+    border-top: 1px solid #E0D8CC;
+    padding-top: 1.5rem;
+    font-size: 0.8rem;
+    color: #5E5A54;
+}
+
+.footer a {
+    color: #5E5A54;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.footer a:hover {
+    border-bottom-color: #0b0602;
+}
+
+/* RESPONSIVE - MÓVILES Y TABLETS */
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .tarjetas {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+/* SECCIÓN DE NOVEDADES */
+.novedades {
+    margin: 2rem 0 3rem 0;
+    border-top: 1px solid #080502;
+    padding-top: 2rem;
+}
+
+.novedades h3 {
+    font-family: 'Inter', 'Helvetica Neue', sans-serif;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #5E5A54;
+    margin-bottom: 1rem;
+}
+
+/* La tarjeta de novedades puede ser igual a las otras */
+/* pero le damos un borde distintivo o un color sutil */
+.tarjeta.novedad {
+    border: 1px solid #080200;
+    /* un poco más oscuro */
+}
+
+.tarjeta.novedad .tarjeta-titulo {
+    background-color: #f6f5f5;
+    /* un fondo muy sutil */
+}
+
+.tarjeta.novedad .tarjeta-titulo .nombre {
+    font-weight: 600;
+    color: #2C3E4C;
+}
+
+.tarjeta.novedad .tarjeta-titulo .obra {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 0.8rem;
+    color: #5E5A54;
+}
+
+/* ESTILOS PARA LA IMAGEN DE LAS TARJETAS */
+.tarjeta-imagen {
+    width: 100%;
+    /* Ocupa todo el ancho de la tarjeta */
+    aspect-ratio: 4 / 3;
+    /* Proporción: más ancha que alta */
+    background-size: cover;
+    /* La imagen llena el cuadro (puedes cambiarlo después) */
+    background-position: center;
+    /* Centrada */
+    background-color: #e3e2e2;
+    /* Color de fondo mientras carga */
+}
+
+/* VERSIÓN ESPECIAL PARA LA IMAGEN DE NOVEDADES (VERTICAL) */
+.novedad-imagen {
+    background-size: contain !important;
+    /* Imagen completa, con espacios */
+    background-repeat: no-repeat !important;
+    background-position: center;
+    background-color: #ca3504;
+    /* Fondo del color de la web */
+}
+
+/* PÁGINA DE MANIFIESTO */
+.manifiesto {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #E0D8CC;
+}
+
+.manifiesto h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #B7A99A;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.manifiesto h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 2rem 0 1rem;
+    color: #2C3E4C;
+}
+
+.manifiesto p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.manifiesto p.cita {
+    font-style: italic;
+    border-left: 3px solid #B7A99A;
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+    color: #5E5A54;
+}
+
+.manifiesto hr {
+    border: none;
+    border-top: 1px solid #E0D8CC;
+    margin: 2rem 0;
+}
+
+.manifiesto .firma {
+    text-align: right;
+    font-style: italic;
+    color: #5E5A54;
+}
+
+/* HEADER (si no lo tenías) */
+.nav {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #E0D8CC;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #5E5A54;
+    margin: 0 0.2rem;
+}
+
+.nav a:hover {
+    color: #2C3E4C;
+    border-bottom: 1px solid #2C3E4C;
+}
+
+/* BANNERS DENTRO DEL MANIFIESTO */
+.banner-manifiesto {
+    margin: 2.5rem 0;
+    text-align: center;
+    border-top: 1px solid #E0D8CC;
+    border-bottom: 1px solid #E0D8CC;
+    padding: 1.5rem 0;
+    background-color: #F9F6F2;
+    /* fondo muy sutil para destacar */
+}
+
+.banner-manifiesto img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem auto;
+    border: 1px solid #E0D8CC;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.banner-manifiesto .pie-imagen {
+    font-size: 0.8rem;
+    color: #5E5A54;
+    font-style: italic;
+    margin: 0;
+    letter-spacing: 0.3px;
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 600px) {
+    .banner-manifiesto {
+        margin: 1.5rem 0;
+        padding: 1rem 0;
+    }
+}
+
+/* PÁGINA DE PROTOCOLOS (INDEX) */
+.presentacion-protocolos {
+    margin: 2rem 0 3rem 0;
+    text-align: center;
+    border-top: 1px solid #E0D8CC;
+    padding-top: 2rem;
+}
+
+.presentacion-protocolos h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #2C3E4C;
+}
+
+.presentacion-protocolos p {
+    max-width: 600px;
+    margin: 0 auto 1rem auto;
+    color: #5E5A54;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* GRID DE TARJETAS DE PROTOCOLOS */
+.protocolos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+/* TARJETA DE PROTOCOLO */
+.tarjeta-protocolo {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: white;
+    border: 1px solid #E0D8CC;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+}
+
+.tarjeta-protocolo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: #B7A99A;
+}
+
+.tarjeta-protocolo-imagen {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-color: #F0E8DD;
+    border-bottom: 1px solid #E0D8CC;
+}
+
+.tarjeta-protocolo-contenido {
+    padding: 1.5rem;
+}
+
+.tarjeta-protocolo-contenido h3 {
+    font-family: 'Inter', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    color: #2C3E4C;
+}
+
+.tarjeta-protocolo-contenido p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #5E5A54;
+    margin-bottom: 1.5rem;
+}
+
+.boton-protocolo {
+    display: inline-block;
+    font-family: 'Inter', 'Helvetica Neue', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #2C3E4C;
+    border-bottom: 1px solid #B7A99A;
+    padding-bottom: 0.2rem;
+}
+
+.tarjeta-protocolo:hover .boton-protocolo {
+    color: #000;
+    border-bottom-color: #2C3E4C;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .protocolos-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+/* ===== PÁGINAS DE PROTOCOLO ===== */
+/* Estilos compartidos para protocolo-literario.html y protocolo-visual.html */
+
+.protocolo {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #E0D8CC;
+}
+
+/* Título principal de la página */
+.protocolo h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #B7A99A;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #1C1C1C;
+}
+
+/* Subtítulo (debajo del h2) */
+.protocolo .subtitulo-protocolo {
+    font-size: 1rem;
+    font-style: italic;
+    color: #5E5A54;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+/* Títulos de cada sección (I, II, III...) */
+.protocolo h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 2rem 0 1rem;
+    color: #2C3E4C;
+    border-left: 3px solid #B7A99A;
+    padding-left: 1rem;
+    font-family: 'Inter', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+/* Párrafos normales */
+.protocolo p {
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #1C1C1C;
+}
+
+/* Citas (el ejercicio de imaginación) */
+.protocolo p.cita {
+    font-style: italic;
+    border-left: 3px solid #B7A99A;
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+    color: #5E5A54;
+    background-color: #F9F6F2;
+    padding: 1rem 1.5rem;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    border-radius: 0;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+/* Firma al final */
+.protocolo .firma {
+    text-align: right;
+    font-style: italic;
+    color: #5E5A54;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    border-top: 1px solid #E0D8CC;
+    padding-top: 1.5rem;
+}
+
+/* Banner opcional dentro del protocolo */
+.foto-protocolo {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.foto-protocolo img {
+    width: 70%;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #E0D8CC;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: block;
+    margin: auto;
+}
+
+/* Separador fino (opcional, si quieres usarlo) */
+.protocolo hr {
+    border: none;
+    border-top: 1px solid #E0D8CC;
+    margin: 2rem 0;
+}
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+    .protocolo h2 {
+        font-size: 1.6rem;
+    }
+
+    .protocolo h3 {
+        font-size: 1.2rem;
+        padding-left: 0.8rem;
+    }
+
+    .protocolo p.cita {
+        padding: 0.8rem 1rem;
+        margin: 1rem 0;
+    }
+}
+
+/* ===== GALERÍA DE AUTORES ===== */
+
+/* Introducción */
+.intro-galeria {
+    margin: 2rem 0 3rem 0;
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #5E5A54;
+    font-style: italic;
+    border-top: 1px solid #E0D8CC;
+    padding-top: 2rem;
+}
+
+/* Grid de autores */
+.grid-autores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+/* Tarjeta de autor */
+.tarjeta-autor {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: white;
+    border: 1px solid #E0D8CC;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+.tarjeta-autor:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: #B7A99A;
+}
+
+/* Foto del autor */
+.foto-autor {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1rem auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #E0D8CC;
+}
+
+.foto-autor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Placeholder (autores futuros) */
+.tarjeta-autor.placeholder .foto-autor {
+    background-color: #F0E8DD;
+    border: 2px dashed #B7A99A;
+}
+
+.tarjeta-autor.placeholder .foto-autor img {
+    opacity: 0.3;
+}
+
+/* Información del autor */
+.info-autor h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+    color: #2C3E4C;
+}
+
+.info-autor .pais {
+    font-size: 0.9rem;
+    color: #5E5A54;
+    margin-bottom: 0.2rem;
+}
+
+.info-autor .anio {
+    font-size: 0.8rem;
+    color: #B7A99A;
+    font-style: italic;
+}
+
+/* Pie de galería */
+.pie-galeria {
+    margin: 3rem 0;
+    text-align: center;
+    color: #5E5A54;
+    font-style: italic;
+    border-top: 1px solid #E0D8CC;
+    padding-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .grid-autores {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .grid-autores {
+        grid-template-columns: 1fr;
+    }
+
+    .foto-autor {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* ===== GALERÍA VISUAL ===== */
+.intro-galeria {
+    margin: 2rem 0 3rem 0;
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #5E5A54;
+    font-style: italic;
+    border-top: 1px solid #E0D8CC;
+    padding-top: 2rem;
+}
+
+.pie-galeria {
+    margin: 3rem 0;
+    text-align: center;
+    color: #5E5A54;
+    font-style: italic;
+    border-top: 1px solid #E0D8CC;
+    padding-top: 2rem;
+}
+
+/* ===== PÁGINA INDIVIDUAL DE ARTISTA VISUAL ===== */
+
+/* Foto del artista (retrato) */
+.foto-artista-individual {
+    margin: 2rem auto 1.5rem auto;
+    text-align: center;
+    max-width: 250px;
+}
+
+.foto-artista-individual img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #E0D8CC;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Nombre y país */
+.nombre-artista {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 0.3rem;
+    color: #1C1C1C;
+}
+
+.pais-artista {
+    text-align: center;
+    font-size: 1rem;
+    color: #5E5A54;
+    font-style: italic;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #E0D8CC;
+    padding-bottom: 1rem;
+}
+
+/* Frase / declaración del artista */
+.frase-artista {
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #2C3E4C;
+    border-top: 1px solid #E0D8CC;
+    border-bottom: 1px solid #E0D8CC;
+    padding: 1.5rem 0;
+}
+
+/* Biografía */
+.bio-artista {
+    margin: 2rem 0;
+}
+
+.bio-artista h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #2C3E4C;
+    border-left: 3px solid #B7A99A;
+    padding-left: 1rem;
+}
+
+.bio-artista p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+/* Sección de obras */
+.obras-artista {
+    margin: 3rem 0;
+    border-top: 1px solid #E0D8CC;
+    padding-top: 2rem;
+}
+
+.obras-artista h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    color: #2C3E4C;
+}
+
+.obra-item {
+    background-color: #F9F6F2;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid #E0D8CC;
+}
+
+.obra-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+    color: #1C1C1C;
+}
+
+.obra-metadata {
+    font-size: 0.9rem;
+    color: #5E5A54;
+    font-style: italic;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #E0D8CC;
+    padding-bottom: 0.5rem;
+}
+
+.obra-imagen {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    margin: 1rem 0;
+    border: 1px solid #E0D8CC;
+    box-shadow: 0 4px 12px rgba (0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.obra-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.obra-descripcion {
+    font-size: 0.95rem;
+    color: #5E5A54;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.obra-acciones {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.boton-obra {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    background-color: transparent;
+    border: 1px solid #2C3E4C;
+    color: #2C3E4C;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.boton-obra:hover {
+    background-color: #2C3E4C;
+    color: white;
+}
+
+/* Nota del director */
+.nota-director {
+    margin: 3rem 0;
+    border-top: 1px solid #E0D8CC;
+    padding-top: 2rem;
+    font-style: italic;
+    color: #5E5A54;
+}
+
+.nota-director h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #2C3E4C;
+    font-style: normal;
+}
+
+.firma-nota {
+    text-align: right;
+    margin-top: 1rem;
+    font-style: normal;
+}
+
+/* Botón volver */
+.volver {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.btn-volver {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    border: 1px solid #B7A99A;
+    color: #5E5A54;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-volver:hover {
+    background-color: #B7A99A;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .foto-artista-individual {
+        max-width: 180px;
+    }
+
+    .nombre-artista {
+        font-size: 1.6rem;
+    }
+
+    .obra-acciones {
+        flex-direction: column;
+    }
+
+    .boton-obra {
+        width: 100%;
+        text-align: center;
+    }
+}

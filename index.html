@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADF · Archivo Descolonial de Futuros</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <!-- CABECERA -->
+        <h1>ADF</h1>
+        <p class="subtitulo">ARCHIVO DESCOLONIAL DE FUTUROS</p>
+        <p class="titulo">ÁFRICA 2100. Lo que el hombre blanco debe saber</p>
+
+        <!-- RESUMEN EJECUTIVO -->
+        <div class="resumen">
+            <p>Archivo independiente que preserva y difunde futuros imaginados por diferentes autoridades de África. Cada texto, cada obra, cada mirada responden siempre a las dos mismas preguntas: ¿Cómo será tu país en 2100? y ¿Qué lugar ocupará en el mundo?</p>
+            <p>Traducimos estas voces al español y las activamos en el circuito literario y académico español y europeo. Buscamos editoriales, presentamos a premios, gestionamos residencias y promovemos a sus autores en ferias, universidades y medios. Un puente entre el pensamiento africano y el mundo hispanohablante.</p>
+        </div>
+
+        <!-- ACCESOS DIRECTOS -->
+        <div class="tarjetas">
+            <a href="manifiesto.html" class="tarjeta">
+                <div class="tarjeta-imagen"
+                    style="background-image: url('fotos/fotos_index/manifiesto.JPEG'); background-position: center 30%;">
+                </div>
+                <div class="tarjeta-titulo">MANIFIESTO</div>
+            </a>
+            <a href="protocolo.html" class="tarjeta">
+                <div class="tarjeta-imagen" style="background-image: url('fotos/fotos_index/protocolo.JPEG');"></div>
+                <div class="tarjeta-titulo">PROTOCOLO</div>
+            </a>
+            <a href="archivo.html" class="tarjeta">
+                <div class="tarjeta-imagen" style="background-image: url('fotos/fotos_index/archivo.JPEG');"></div>
+                <div class="tarjeta-titulo">ARCHIVO</div>
+            </a>
+            <a href="galeria.html" class="tarjeta">
+                <div class="tarjeta-imagen" style="background-image: url('fotos/fotos_index/galeria.JPEG');"></div>
+                <div class="tarjeta-titulo">GALERÍA</div>
+            </a>
+        </div>
+
+        <!-- TARJETA DE NOVEDADES - PRIMERA VOZ -->
+        <div class="novedades">
+            <h3>NOVEDAD</h3>
+            <a href="autores_visuales/omupangi-gwomafimbo.html" class="tarjeta novedad">
+                <div class="tarjeta-imagen novedad-imagen" style="background-image: url('fotos/fotos_autores/autor_visual/autor\ ejemplo.jpeg');"></div>
+                <div class="tarjeta-titulo">
+                    <span class="nombre">NUEVO ARCHIVO DE FUTURISMO AFRICANO</span>
+                    <span class="obra">· AFRICA 2100</span>
+                </div>
+            </a>
+        </div>
+
+        <!-- FORMULARIO DE CONTACTO -->
+        <div class="formulario">
+            <h3>ESCRÍBANOS</h3>
+            <p>Sugiera una voz, envíe una carta, pregunte.</p>
+
+            <form action="https://formspree.io/f/tu-endpoint-aqui" method="POST">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <textarea name="mensaje" placeholder="Mensaje" rows="4" required></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+
+        <!-- CONTADOR DE VOCES -->
+        <div class="contador">
+            <p>Voces del porvenir: <span id="numero-voces">0</span></p>
+        </div>
+
+        <!-- PIE DE PÁGINA -->
+        <div class="footer">
+            <p><a href="mailto:hola@africafutura.org">hola@africafutura.org</a></p>
+            <p>Vigo, 2026</p>
+        </div>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
